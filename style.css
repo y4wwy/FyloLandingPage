@@ -1,6 +1,22 @@
+:root {
+  --dark-blue-email: hsl(217, 28%, 15%);
+  --dark-blue-main: hsl(218, 28%, 13%);
+  --dark-blue-footer: hsl(216, 53%, 9%);
+  --dark-blue-testimonials: hsl(219, 30%, 18%);
+
+  --accent-cyan: hsl(176, 68%, 64%);
+  --accent-blue: hsl(198, 60%, 50%);
+  --accent-light: hsl(0, 100%, 63%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
 body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  color: var(--neutral-white);
+  background-color: var(--dark-blue-main);
+  line-height: 1.5;
 }
 
 h1,
@@ -9,6 +25,85 @@ h3,
 h4,
 h5,
 h6,
+nav,
 button {
   font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 94%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.primary-button {
+  background: linear-gradient(to right, var(--accent-blue), var(--accent-cyan));
+  padding: 12px 48px;
+  border-radius: 999px;
+  color: var(--neutral-white);
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 128px;
+}
+
+nav {
+  display: flex;
+  gap: 36px;
+}
+
+/* Hero */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 75ch;
+}
+
+#hero .hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+#hero h1 {
+  font-size: 36px;
+}
+
+/* Features */
+#features {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+#features .feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(50% - 12px);
+  min-width: 310px;
+}
+
+#features .feature-card h3 {
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+#features .feature-card p {
+  opacity: 0.75;
 }
