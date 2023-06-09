@@ -107,3 +107,35 @@ nav {
 #features .feature-card p {
   opacity: 0.75;
 }
+
+/* Stay Productive */
+#stay-productive {
+  margin-top: 72px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+#stay-productive .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#stay-productive h2 {
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 15ch;
+}
+
+#stay-productive p {
+  opacity: 0.75;
+}
+
+#stay-productive a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--cyan);
+  text-decoration: underline;
+}
