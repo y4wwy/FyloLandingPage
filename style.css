@@ -136,6 +136,133 @@ nav {
   display: flex;
   align-items: center;
   gap: 4px;
-  color: var(--cyan);
+  color: var(--accent-cyan);
   text-decoration: underline;
+}
+
+/* Quotes */
+#quotes {
+  margin-top: 72px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+#quotes .quote-card {
+  padding: 24px;
+  background-color: var(--dark-blue-testimonials);
+}
+
+#quotes .quote-card p {
+  margin-bottom: 12px;
+}
+
+#quotes .quote-card .profile-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#quotes .quote-card .profile-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+#quotes .quote-card h6 {
+  font-size: 12px;
+  opacity: 0.75;
+  margin-top: 4px;
+}
+
+/* call-to-action */
+#call-to-action {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 72px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: var(--dark-blue-testimonials);
+  padding: 48px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#call-to-action h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+#call-to-action form {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+#call-to-action .input-wrapper {
+  height: 40px;
+  flex: 1;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+#call-to-action .input-wrapper input {
+  width: 100%;
+  height: 100%;
+  text-indent: 12px;
+}
+
+#call-to-action .input-wrapper input::placeholder {
+  opacity: 0.75;
+}
+
+/* footer */
+footer {
+  background-color: var(--dark-blue-footer);
+  padding-top: 172px;
+  padding-bottom: 72px;
+  margin-top: 200px;
+}
+
+footer .footer-bottom {
+  margin-top: 24px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.footer-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-address p {
+  width: 35ch;
+}
+
+.footer-com .item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 475px) {
+  footer .footer-bottom {
+    flex-direction: column;
+  }
 }

@@ -127,17 +127,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
-
 img {
   display: block;
   max-width: 100%;
 }
 
+input,
 button {
   outline: none;
   border: none;
